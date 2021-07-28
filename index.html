@@ -21,9 +21,9 @@
     <form name="forma">
       <mi-nav></mi-nav>
       <header>
-        <div class="dala" style="height: 30%;display: grid;/* grid-template-columns: repeat(3, 1fr); *//* grid-gap: 95px; *//* grid-auto-rows: minmax(65px, auto); */">
+        <div class="dala">
           <div style="grid-column: 2;grid-row: 1;">
-              <h1 style="text-align: left;">Sesión </h1>
+              <h1 style="text-align: left; color: #fff;">Sesión </h1>
           </div>
         </div>
       </header>
@@ -33,7 +33,7 @@
       <div align="center">
         <table>
           <tr>
-            <td>
+            <td colspan="2">
               <figure>
                 <img id="avatar" src="" alt="Avatar">
               </figure>
@@ -44,13 +44,23 @@
               <label>Email</label>
             </td>
             <td>
-                <output name="email">
-                  <mi-progreso></mi-progreso>
-                </output>
+              <output name="email">
+                <mi-progreso></mi-progreso>
+              </output>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Nombre</label>
+            </td>
+            <td>
+              <output name="nombre">
+                <mi-progreso></mi-progreso>
+              </output>
             </td>
           </tr>
         </table>
-        
+
         <!--<figure>
           <img id="avatar" src="" alt="Avatar">
         </figure>
@@ -60,7 +70,7 @@
               <mi-progreso></mi-progreso>
             </output>
           </label>
-        </p>-->
+        </p>
         <p>
           <label>Nombre
             <output name="nombre">
@@ -68,7 +78,7 @@
             </output>
           </label>
         </p>
-      </div>
+      </div>-->
       <footer align="center"><p>&copy; 2021 Ruth Vianey Perez Zetina.</p></footer>
       <!--<mi-footer></mi-footer>-->
     </form>
