@@ -63,8 +63,8 @@ p label>* {
 
 
 mi-nav{
-  margin:20px auto;
-  width:90%;
+  margin:0px auto;
+  width:100%;
   max-width: width 1000px;
 }
 
@@ -76,7 +76,7 @@ mi-nav > ul{
   display: table;
   overflow: hidden;
   width: 100%;
-  background:#000;
+  background:#DA9530;
   position: relative;
 }
 
@@ -105,7 +105,7 @@ mi-nav > ul > li > ul > li a:hover{
 }
 
 mi-nav > ul > li > a span {
-  background: #f25724;
+  background: #5da5a2;
   display: block;
   height:100%;
   width:100%;

@@ -11,14 +11,14 @@ html {
 }
 
 .dala {
-  /*border-radius: 42px 42px 42px 42px;
-  -moz-border-radius: 42px 42px 42px 42px;
-  -webkit-border-radius: 42px 42px 42px 42px;*/
+  border-radius: 42px 42px 0px 0px;
+  -moz-border-radius: 42px 42px 0px 0px;
+  -webkit-border-radius: 42px 42px 0px 0px;
   height: 30%;
   display: grid;
   border: 0px solid #000000;
   background-color:#000;
-  width:100%;
+  width:90%;
   margin: auto;
   text-align:center;
   align-content: center;
