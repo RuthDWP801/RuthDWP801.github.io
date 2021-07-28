@@ -19,7 +19,6 @@
   </head>
   <body>
     <form name="forma">
-      <mi-nav></mi-nav>
       <header>
         <div class="dala">
           <div style="grid-column: 2;grid-row: 1;">
@@ -27,8 +26,13 @@
           </div>
         </div>
       </header>
+      <mi-nav>
+
+      </mi-nav>
       <div class="herramientas">
-        <button type="button" name="terminarSesión"> Terminar Sesión </button>
+        <button name="terminarSesión"  class="button is-danger is-outlined">
+          <span>Terminar Sesión </span>
+        </button>
       </div>
       <div align="center">
         <table>
@@ -40,7 +44,7 @@
             </td>
           </tr>
           <tr>
-            <td>
+            <td colspan="2">
               <label>Email</label>
             </td>
             <td>
@@ -50,7 +54,7 @@
             </td>
           </tr>
           <tr>
-            <td>
+            <td colspan="2">
               <label>Nombre</label>
             </td>
             <td>
