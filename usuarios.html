@@ -1,5 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+    <script src="js/init.js"></script>
+    <script type="module" src="cmp/mi-nav.js"></script>
+    <script type="module" src="cmp/mi-footer.js"></script>
+    <script type="module" src="cmp/mi-progreso.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fonts.css">       
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/img.css">
+  </head>
+  <body>
+    <mi-nav></mi-nav>
+    <header>
+      <div class="dala">
+        <div style="grid-column: 2;grid-row: 1;">
+          <br>
+            <h1 style="text-align: left; color: #fff;">Usuarios</h1>
+        </div>
+      </div>
+      <mi-nav>
+      </mi-nav>
+    </header>
+    <div class="herramientas">
+      <button class="button is-primary">
+        <a href="usuarioNuevo.html" style="color: #fff;"> Agregar…</a>
+      </button>
+  
+    </div>
+    <!--<header>
+      <h1>Usuarios</h1>
+      <div class="herramientas">
+        <a href="usuarioNuevo.html">
+          Agregar…</a>
+      </div>
+    </header>-->
+    <ul id="lista" class="lista">
+      <li>
+        <mi-progreso>
+        </mi-progreso>
+      </li>
+    </ul>
+    <mi-footer></mi-footer>
+    <script type="module"
+      src="js/CtrlUsuarios.js">
+      </script>
+  </body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -15,7 +72,6 @@
   <script
     src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
     </script>
-  <!-- Agrega el manejo de storage. -->
   <script
     src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
     </script>
@@ -53,4 +109,4 @@
     src="js/CtrlUsuarios.js">
     </script>
 </body>
-</html>
+</html>-->
