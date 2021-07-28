@@ -2,45 +2,92 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,
-       initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Alumno</title>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
-    </script>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
-    </script>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
-    </script>
-  <script src="js/init.js">
-  </script>
-  <script type="module"
-    src="cmp/mi-nav.js">
-    </script>
-  <script type="module"
-    src="cmp/mi-footer.js">
-    </script>
-  <link rel="stylesheet"
-    href="css/estilos.css">
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+  <script src="js/init.js"></script>
+  <script type="module" src="cmp/mi-nav.js"></script>
+  <script type="module" src="cmp/mi-footer.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/fonts.css">       
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/img.css">
 </head>
 <body>
   <form name="forma">
-    <mi-nav></mi-nav>
+    <br>
     <header>
-      <h1>Alumno</h1>
-      <div class="herramientas">
-        <a href="alumnos.html">
-          Cancelar</a>
-        <button>Guardar</button>
-        <button name="eliminar"
-          type="button">
-          Eliminar
-        </button>
+      <div class="dala">
+        <div style="grid-column: 2;grid-row: 1;">
+          <br>
+            <h1 style="text-align: left; color: #fff;">Alumno</h1>
+        </div>
       </div>
+      <mi-nav>
+      </mi-nav>
     </header>
+
+    <div class="herramientas">
+      <a href="alumnos.html" class="button is-danger is-outlined">Cancelar</a>
+      <button class="button is-primary">Guardar</button>
+      <button name="eliminar"type="button" class="button is-danger is-active">Eliminar</button>
+    </div>
+
+    <div align="center" >
+      <table>
+        <tr>
+          <td colspan="2">
+            <label>Matricula</label>
+          </td>
+          <td>
+            <input class="input is-rounded input is-link" name="matricula" type="text" required  style="width: 400px;">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <br>
+            <label>Nombre</label>
+          </td>
+          <td>
+            <br>
+            <input class="input is-rounded input is-link" name="nombre" type="text" required  style="width: 400px;">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <br>
+            <label>Teléfono</label>
+          </td>
+          <td>
+            <br>
+            <input class="input is-rounded input is-link" name="telefono" type="text" required  style="width: 400px;">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <br>
+            <label>Grupo</label>
+          </td>
+          <td>
+            <br>
+            <input class="input is-rounded input is-link" name="grupo" type="text" required style="width: 400px;">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <br>
+            <label>Fecha</label>
+          </td>
+          <td>
+            <br>
+            <input class="input is-rounded input is-link" name="fecha" type="date" required style="width: 400px;">
+          </td>
+        </tr>
+      </table>
+    </div>
+<!--
     <p>
       <label>
         Matricula
@@ -74,7 +121,7 @@
         Fecha
         <input name="fecha" type="date" required>
       </label>
-    </p>
+    </p>-->
     <mi-footer></mi-footer>
   </form>
   <script type="module"
