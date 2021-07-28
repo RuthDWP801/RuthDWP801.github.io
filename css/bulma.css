@@ -10712,6 +10712,8 @@ html {
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    color: #000;
+    font-size: 18px;
 }
 
 .bgDark { background-color: #1a1a1a; }
@@ -10727,7 +10729,7 @@ h5 { margin-bottom: 0px; }
 
 p {
     font-size: 18px;
-    color: #999999;
+    color: #000;
     line-height: 1.8;
     margin-bottom: 0px;
 }
