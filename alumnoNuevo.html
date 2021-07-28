@@ -1,5 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alumno Nuevo</title>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="js/init.js"></script>
+    <script type="module" src="cmp/mi-nav.js"></script>
+    <script type="module" src="cmp/mi-footer.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fonts.css">       
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/img.css">
+  </head>
+  <body>
+    <form name="forma">
+      <br>
+      <header>
+        <div class="dala">
+          <div style="grid-column: 2;grid-row: 1;">
+            <br>
+              <h1 style="text-align: left; color: #fff;">Alumno Nuevo </h1>
+          </div>
+        </div>
+        <mi-nav>
+        </mi-nav>
+      </header>
+
+      <div class="herramientas">
+        <button class="button is-danger is-outlined">
+          <a href="alumnos.html" style="color: #000;">Cancelar</a>
+        </button>
+        <button type="submit" class="button is-primary" style="color: #fff;">Guardar</button>
+      </div>
+      <!--<mi-nav></mi-nav>
+      <header>
+        <h1>Alumno Nuevo</h1>
+        <div class="herramientas">
+          <a
+            href="alumnos.html">
+            Cancelar</a>
+          <button type="submit">
+            Guardar
+          </button>
+        </div>
+      </header>-->
+      <div align="center" >
+        <table>
+          <tr>
+            <td>
+              <label>Matricula</label>
+            </td>
+            <td>
+              <input class="input is-rounded" name="matricula" type="text" required  style="width: 400px;">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br>
+              <label>Nombre</label>
+            </td>
+            <td>
+              <br>
+              <input class="input is-rounded" name="nombre" type="text" required  style="width: 400px;">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br>
+              <label>Teléfono</label>
+            </td>
+            <td>
+              <br>
+              <input class="input is-rounded" name="telefono" type="text" required  style="width: 400px;">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br>
+              <label>Grupo</label>
+            </td>
+            <td>
+              <br>
+              <input class="input is-rounded" name="grupo" type="text" required style="width: 400px;">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br>
+              <label>Fecha</label>
+            </td>
+            <td>
+              <br>
+              <input class="input is-rounded" name="fecha" type="date" required style="width: 400px;">
+            </td>
+          </tr>
+        </table>
+      </div>
+<!--
+      <p>
+        <label>
+          Matricula
+          <input name="matricula"
+            type="text" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          Nombre
+          <input name="nombre"
+            type="text" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          Teléfono
+          <input name="telefono"
+            type="text" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          Grupo
+          <input name="grupo"
+            type="text" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          Fecha
+          <input name="fecha"
+            type="date" required>
+        </label>
+      </p>-->
+      <mi-footer></mi-footer>
+    </form>
+    <script type="module"
+      src="js/CtrlAlumnoNuevo.js">
+      </script>
+  </body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -80,5 +226,5 @@
     src="js/CtrlAlumnoNuevo.js">
     </script>
 </body>
-</html>
+</html>-->
 
