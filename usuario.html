@@ -26,7 +26,8 @@
           <div style="grid-column: 2;grid-row: 1;">
             <br>
             <h1>
-              <output name="cue">Usuario
+              <output name="cue">
+                Usuario
                 <mi-progreso>
                 </mi-progreso>
               </output>
@@ -68,13 +69,14 @@
             <td>
               <div class="file">
                 <label class="file-label">
-                  <input class="file-input" name="avatar" type="file" required accept=".png,.jpg,.jpeg,.gif">
+                  <input name="avatar" type="file" accept=".png,.jpg,.jpeg,.gif" class="file-input">
+                  <!--<input class="file-input" name="avatar" type="file" required accept=".png,.jpg,.jpeg,.gif">
                   <span class="file-cta">
                       <i class="fas fa-upload"></i>
                     <span class="file-label">
                       Choose a file…
                     </span>
-                  </span>
+                  </span>-->
                 </label>
               </div>
               <!--<input name="avatar" type="file" accept=".png,.jpg,.jpeg,.gif">-->
@@ -97,7 +99,7 @@
           </tr>
         </table>
 
-        <fieldset>
+        <!--<fieldset>
           <legend>Roles</legend>
           <ul id="listaRoles"
             class="checks">
@@ -106,10 +108,19 @@
               </mi-progreso>
             </li>
           </ul>
-        </fieldset>
+        </fieldset>-->
       </div>
       
-      
+      <fieldset>
+        <legend>Roles</legend>
+        <ul id="listaRoles"
+          class="checks">
+          <li>
+            <mi-progreso>
+            </mi-progreso>
+          </li>
+        </ul>
+      </fieldset>
       <mi-footer></mi-footer>
     </form>
     <script type="module"
