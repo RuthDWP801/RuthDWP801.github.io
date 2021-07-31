@@ -1,5 +1,5 @@
 class MiProgeso
-  extends HTMLElement {
+extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
       `<progress max="100">
@@ -8,5 +8,4 @@ class MiProgeso
   }
 }
 
-customElements.define(
-  "mi-progreso", MiProgeso);
+customElements.define("mi-progreso", MiProgeso);

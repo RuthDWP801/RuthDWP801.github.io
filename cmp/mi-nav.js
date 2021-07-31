@@ -2,9 +2,11 @@
 import {
   cargaRoles
 } from "../js/seguridad.js";
+
 import {
   getAuth
 } from "../lib/fabrica.js";
+
 import {
   muestraError
 } from "../lib/util.js";
@@ -18,11 +20,9 @@ class MiNav extends HTMLElement {
             Sesión</a>
         </li>
       </ul>`;
-    this.ul =
-      this.querySelector("ul");
+    this.ul = this.querySelector("ul");
     getAuth().onAuthStateChanged(
-      usuario => this.
-        cambiaUsuario(usuario),
+      usuario => this.cambiaUsuario(usuario),
       muestraError);
   }
 
@@ -36,28 +36,21 @@ class MiNav extends HTMLElement {
           const roles =
             await cargaRoles(
               usu.email);
-          /* Enlaces para solo
-           * para clientes. */
           if (roles.has("Cliente")) {
-            html += /* html */
+            html += 
               `<li>
                 <a href=
                   "chat.html">Chat</a>
               </li>`;
           }
-          /* Enlaces para solo
-           * administradores.
-           */
           if (roles.has(
             "Administrador")) {
-            html += /* html */
+            html +=
               `<li>
-                <a href=
-    "alumnos.html">Alumnos</a>
+                <a href="alumnos.html">Alumnos</a>
               </li>
               <li>
-                <a href=
-          "usuarios.html">Usuarios</a>
+                <a href="usuarios.html">Usuarios</a>
               </li>`;
           }
           this.ul.innerHTML += html;
@@ -66,5 +59,4 @@ class MiNav extends HTMLElement {
     }
 
 
-customElements.define(
-  "mi-nav", MiNav);
+customElements.define("mi-nav", MiNav);
